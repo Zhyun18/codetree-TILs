@@ -5,4 +5,4 @@ if a%2==0:
         print((a+1)//2)
     else:print(a)
 else:
-    print(a)
+    print((a+1)//2)
