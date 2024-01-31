@@ -9,8 +9,8 @@ if a1>b1:
     print('A')
 elif a1<b1:
     print('B')
-elif a1==b1:
-    if b1>b2:
+else: # 아래 코드를 잘못 씀 ㅋㅋ 
+    if a2>b2:
         print('A')
-    elif b1<b2:
+    elif a2<b2:
         print('B')
