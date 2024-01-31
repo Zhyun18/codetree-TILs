@@ -8,6 +8,6 @@ else:
     print(0,end=' ')
 
 if a==b and b==c and c==a:
-    pritn(1)
+    print(1)
 else:
     print(0)
