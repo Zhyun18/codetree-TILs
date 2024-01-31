@@ -9,7 +9,7 @@ if a1>b1:
     print('A')
 elif a1<b1:
     print('B')
-else:
+elif a1==b1:
     if b1>b2:
         print('A')
     elif b1<b2:
