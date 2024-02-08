@@ -5,7 +5,7 @@ if a>=b:
         if i%5==0:
             sum_value+=i
 else:
-    for i in range(a,b):
+    for i in range(a,b+1):
         if i%5==0:
             sum_value+=i 
 print(sum_value)
