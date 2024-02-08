@@ -1,11 +1,11 @@
 a,b=map(int,input().split())
 sum_value=0
-if b>=a: # a,b 의 대소 비교 케바케
-    for n in range(a,b+1):
-        if n%5==0:
-            sum_value+=n
+if a>=b:
+    for i in range(b,a+1): # step -1 으로 지정할 필요 x
+        if i%5==0:
+            sum_value+=i
 else:
-    for n in range(b,a-1,-1):
-        if n%5 == 0:
-            sum_value+=n  
+    for i in range(a,b):
+        if i%5==0:
+            sum_value+=i 
 print(sum_value)
