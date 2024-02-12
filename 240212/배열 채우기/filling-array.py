@@ -5,3 +5,4 @@ for i in range(len(arr)):
         answer=arr[i-1::-1]
         for i in answer:
             print(i,end=' ')
+    print(arr[9-i],end=' ')
