@@ -8,6 +8,6 @@ for i in range(len(_list)):
     if _list[i]<250:
         sum_val+=_list[i]
         avg_val=sum_val/(i+1)
-    if _list[i]>250:
+    if _list[i]>=250:
         break
 print(f'{sum_val} {avg_val:.1f}')
