@@ -6,4 +6,6 @@ for i in range(n):
     for k in range(n-i):
         print(chr(cnt),end=' ')
         cnt+=1
+        if cnt>90:
+            cnt==65
     print()
