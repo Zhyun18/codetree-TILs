@@ -12,4 +12,5 @@ for _ in range(n):
         elif num%2==1:
             num=num*3+1
             cnt+=1
-print(cnt)
+    print(cnt)
+    cnt=0
