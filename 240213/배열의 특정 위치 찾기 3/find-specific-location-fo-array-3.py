@@ -7,6 +7,7 @@ for i in range(len(arr)):
         break
     cnt+=1
 
-for i in range(cnt,cnt-3,-1):
-    sum_value+=i 
+
+for i in range(cnt-1,cnt-4,-1):
+    sum_value+=arr[i] 
 print(sum_value)
