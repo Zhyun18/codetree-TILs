@@ -10,6 +10,6 @@ if flag==False:
     for j in ans:
         print(j,end=' ')
 else:
-    ans=arr[i::-1]
+    ans=arr[i-1::-1]
     for j in ans:
         print(j, end=' ')
