@@ -1,6 +1,6 @@
 s=input()
 arr=['L','E','B','R','O']
-idx=-1 
+idx='None'
 for i in arr:
     if s not in arr:
         print(idx)
