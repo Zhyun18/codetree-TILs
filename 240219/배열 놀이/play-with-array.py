@@ -5,7 +5,7 @@ n,q=map(int,input().split())
 arr=[int(i) for i in input().split()]
 
 # q개의 줄에 걸쳐 질의가 주어짐. 각 질의는 3개 중 하나의 타입 
-for _ in range(n):
+for _ in range(q):
     idx=[]
     _list=list(map(int,input().split()))
     if len(_list)==2:
@@ -16,7 +16,10 @@ for _ in range(n):
             if a in arr:
                 idx.append(arr.index(a))
                 print(min(idx)+1)
+            else:
+                print(0)
     else:
         m,a,b=_list[0],_list[1],_list[2]
         for i in arr[a-1:b]:
             print(i,end=' ')
+        print()
