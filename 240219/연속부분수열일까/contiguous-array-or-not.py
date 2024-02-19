@@ -23,7 +23,7 @@ for i in range(len(arr_a)):
                 if arr_a[min(idx):i]==arr_b:
                     flag=True
         else:
-            flag=False
+            continue
 
 
 
