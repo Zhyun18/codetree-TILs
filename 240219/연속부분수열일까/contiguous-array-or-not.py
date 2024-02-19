@@ -13,19 +13,23 @@ arr_a=[i for i in list(map(int,input().split()))]
 arr_b=[i for i in list(map(int,input().split()))]
 
 # 연속부분함수임을 판단
+# 끝에 있는 경우 
+# flag=False 
+# for i in range(len(arr_a)):
+#     if arr_a[i:len(arr_a)]==arr_b:
+#         flag=True
+
+# 중간에 있는 경우 (슬라이싱을하자 min/max 이용)
 idx=[]
-flag=False 
 for i in range(len(arr_a)):
     for j in range(len(arr_b)):
         if arr_a[i]==arr_b[j]:
-            idx.append(i)          
-            for i in range(min(idx),len(arr_a)):
-                if arr_a[min(idx):i]==arr_b:
-                    flag=True
-        else:
-            continue
+            idx.append(i)
 
-
+s,e=min(idx),max(idx)
+for i in range(s,e+1):
+    if arr_a[i:e+1]==arr_b:
+        flag=True
 
 if flag==True:
     print('Yes')
