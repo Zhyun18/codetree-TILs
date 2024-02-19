@@ -30,7 +30,7 @@ else:
         if idx[i]+1==idx[i+1]:
             idx2.append(idx[i])
         else:
-            flag=False
+            continue
     s,e=min(idx2),max(idx2)
     if arr_a[s:e+2] == arr_b:
         flag=True
