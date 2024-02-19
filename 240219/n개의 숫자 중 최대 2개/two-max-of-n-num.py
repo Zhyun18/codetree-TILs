@@ -5,12 +5,12 @@ n=int(input())
 arr=[i for i in list(map(int,input().split()))]
 
 # 내림차순 정렬 
-ans=[]
 max_value=arr[0]
 second_value=arr[0]
 for i in arr: 
     if max_value<i:
         max_value=i
+        arr.pop(arr.index(max_value))
     elif second_value<i:
         second_value=i
 
