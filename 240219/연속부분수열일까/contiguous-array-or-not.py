@@ -13,9 +13,15 @@ arr_a=[i for i in list(map(int,input().split()))]
 arr_b=[i for i in list(map(int,input().split()))]
 
 # 연속부분함수임을 판단
-flag=False
+idx=[]
 for i in range(len(arr_a)):
-    if arr_a[i:len(arr_a)]==arr_b:
+    for j in range(len(arr_b)):
+        if arr_a[i]==arr_b[j]:
+            idx.append(i)
+
+flag=False           
+for i in range(min(idx),len(arr_a)):
+    if arr_a[min(idx):i]==arr_b:
         flag=True
 
 if flag==True:
