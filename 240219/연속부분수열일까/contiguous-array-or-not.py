@@ -14,7 +14,7 @@ arr_b=[i for i in list(map(int,input().split()))]
 
 # 연속부분함수임을 판단
 # 끝에 있는 경우 
-# flag=False 
+flag=False 
 # for i in range(len(arr_a)):
 #     if arr_a[i:len(arr_a)]==arr_b:
 #         flag=True
