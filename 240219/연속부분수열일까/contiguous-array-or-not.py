@@ -21,19 +21,22 @@ for i in range(len(arr_a)):
 
 # 중간에 있는 경우 (슬라이싱을하자 min/max 이용)
 idx=[]
+a=[]
 for i in range(len(arr_a)):
     for j in range(len(arr_b)):
         if arr_a[i]==arr_b[j]:
             idx.append(i)
 
+
 if len(idx)==0:
     flag=False
 else:
-    s,e=min(idx),max(idx)
-    for i in range(s,e+1):
-        if arr_a[i:e+1]==arr_b:
-            flag=True
-
+    for i in range(len(idx)-1):
+        if idx[i]+1==idx[i+1]:
+            a.append(idx[i])
+    s,e=min(a),max(a)
+    if arr_a[s:e+2] == arr_b:
+        flag=True
 if flag==True:
     print('Yes')
 else:
