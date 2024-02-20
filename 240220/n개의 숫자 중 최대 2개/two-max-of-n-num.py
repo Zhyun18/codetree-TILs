@@ -10,7 +10,9 @@ second_value=arr[0]
 for i in arr: 
     if max_value<i:
         max_value=i
-    elif second_value<i and i!=max_value:
+
+
+    if second_value<i<max_value:
         second_value=i
 
 print(max_value,second_value)
