@@ -9,9 +9,10 @@ idx=0
 for i in range(len(arr)):
     if min_value>arr[i]:
         min_value=arr[i] 
-        idx=i+1 
+        idx=i
 
 max_value=arr[idx]
+
 for i in range(idx,len(arr)):
     if max_value<arr[i]:
         max_value=arr[i]
