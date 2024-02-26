@@ -6,3 +6,9 @@ for i in range(len(string)-1):
     if obj==temp:
         print(i)
         break
+    elif obj==string:
+        print(0)
+        break
+    else:
+        print(-1)
+        break
