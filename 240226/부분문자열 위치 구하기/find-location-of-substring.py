@@ -1,10 +1,10 @@
 string=input()
 obj=input()
 temp=''
-for i in range(len(string)-1):
-    if obj in string:
-        print(string.index(obj))
-        break
-    else:
-        print(-1)
-        break
+if obj==string:
+    print(0)
+elif obj in string:
+    print(string.index(obj))
+    
+else:
+    print(-1)
