@@ -1,7 +1,7 @@
 n,a=input().split()
-ans=0
+cnt=0
 for i in range(int(n)):
     s=input()
     if s==a:
-        ans=i 
-print(ans)
+        cnt+=1
+print(cnt)
