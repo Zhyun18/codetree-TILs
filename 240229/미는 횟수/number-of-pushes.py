@@ -4,9 +4,9 @@ arr=list(a)
 
 cnt=0
 flag=False
-for _ in range(len(arr)):
-    arr=arr[1:]+arr[0:1]
-    cnt+=1
+for i in range(len(arr)):
+    arr=arr[-1:]+arr[0:i-1]
+    print(arr)
     if arr==list(b):
         flag=True
         break
