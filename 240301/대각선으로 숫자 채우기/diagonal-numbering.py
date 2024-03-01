@@ -29,7 +29,7 @@ for start_row in range(1,n):
         count+=1
 
 
-for row in answer:
-    for elem in row:
-        print(elem,end=' ')
+for row in range(n):
+    for col in range(m):
+        print(answer[row][col],end=' ')
     print()
