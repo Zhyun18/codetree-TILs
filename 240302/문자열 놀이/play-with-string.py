@@ -9,6 +9,9 @@ for _ in range(q):
         q1,q2=int(ques[1]),int(ques[2])
         arr[q1-1],arr[q2-1]=arr[q2-1],arr[q1-1]
         print(''.join(arr))
-    elif ques[0] =='2':
+    if ques[0] =='2':
         q1,q2=ques[1],ques[2]
-        print(''.join(arr).replace(q1,q2))
+        for i in range(len(arr)):
+            if arr[i]==q1:
+                arr[i]=q2
+        print(''.join(arr))
