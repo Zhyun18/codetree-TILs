@@ -1,7 +1,7 @@
 a=input()
 b=input()
 arr=list(a)
-tmp=''
+
 
 while True:
     if b not in arr:
@@ -9,4 +9,5 @@ while True:
     else:
         idx=arr.index(b)
         arr=arr[:idx]+arr[idx+1:]
-print(tmp)
+
+print(''.join(arr))
