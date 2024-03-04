@@ -1,7 +1,7 @@
 n,m=tuple(map(int,input().split()))
 def solution(n,m):
     ans=0
-    for i in range(1,101):
+    for i in range(2,101):
         if i%n==0 and i%m==0:
            ans=i
            break 
