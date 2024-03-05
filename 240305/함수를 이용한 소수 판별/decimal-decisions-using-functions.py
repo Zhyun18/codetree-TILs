@@ -5,7 +5,10 @@ def solution(n):
             return 0
     return n # 위치 
 
-sum_value=1
+sum_value=0
 for i in range(a,b+1):
-    sum_value+=solution(i)
+    if i==1:
+        sum_value=0
+    else:
+        sum_value+=solution(i)
 print(sum_value)
