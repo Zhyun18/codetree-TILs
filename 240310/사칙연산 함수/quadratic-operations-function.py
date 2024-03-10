@@ -11,5 +11,8 @@ def solution(a,b,c):
             return int(a)//int(c)
         if b=='*':
             return int(a)*int(c)
-        
-print(f'{a} {b} {c} = {solution(a,b,c)}')
+
+if b in ['+','-','/','*']:
+    print(f'{a} {b} {c} = {solution(a,b,c)}')
+else:
+    print(solution(a,b,c))
