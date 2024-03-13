@@ -15,12 +15,14 @@ def solution(m,d):
             return True 
         else:
             return False 
-    else:
+    elif str(m) in ['4','6','9','11']:
         date=[str(i) for i in range(1,31)] 
         if str(d) in date:
             return True 
         else:
             return False 
+    else:
+        return False
 
 if solution(m,d):
     print('Yes')
