@@ -13,6 +13,7 @@ def solution(a,b):
             start=i
         if b[-1]==a[i]:
             end=i
+            break 
     if a[start:end+1]==b:
         return True  
     else:
@@ -33,5 +34,6 @@ else:
 #         start=i
 #     if b[-1]==a[i]:
 #         end=i
-# print(a[start:end+1])
+#         break 
+# print(a[start:end])
 # print(b)
