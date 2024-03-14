@@ -11,7 +11,7 @@ def solution(a,b):
             b=b[1:]
         if b[0]==a[i]:
             start=i
-        if b[-1]==a[i]:
+        if b[-1]==a[i] and start<i :
             end=i
             break 
     if a[start:end+1]==b:
@@ -32,7 +32,7 @@ else:
 #         b=b[1:]
 #     if b[0]==a[i]:
 #         start=i
-#     if b[-1]==a[i]:
+#     if b[-1]==a[i] and start<i:
 #         end=i
 #         break 
 # print(a[start:end])
