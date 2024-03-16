@@ -5,7 +5,7 @@ def solution(s):
     for i in range(1,len(a)):
         if a[i]!=string:
             cnt+=1
-    if cnt>=2:
+    if cnt>=1:
         return "Yes"
     else:
         return "No"
