@@ -10,5 +10,6 @@ def solution(a,b):
         a=a*2
         return a,b 
 
-for i in solution(a,b):
-    print(i,end=' ')
+# 출력
+a,b=solution(a,b)
+print(a,b)
