@@ -1,8 +1,8 @@
 a=input()
 def solution(s):
-    if a.islower(): # 소문자 판단 메서드 : islower()
-        return "Yes"
+    if s==s[::-1]:
+        return 'Yes'
     else:
-        return "No"
-
+        return 'No'
+            
 print(solution(a))
