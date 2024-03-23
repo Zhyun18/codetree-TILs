@@ -9,7 +9,7 @@ def solution_1(n):
     solution_1(n-1)
 
 
-solution_1(n)
+#solution_1(n)
 
 def solution_2(n):
     if n==0:
@@ -17,4 +17,15 @@ def solution_2(n):
     solution_2(n-1)
     print(n,end=' ')
 
-solution_2(n)
+#solution_2(n)
+
+# 재귀함수 하나만 
+def solution(n):
+    if n==0:
+        return 
+    print(n,end=' ')
+    solution(n-1)
+    print(n,end=' ')
+
+
+solution(n)
