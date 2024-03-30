@@ -8,12 +8,16 @@ result=1
 for elem in arr:
     if elem==1:
         result*=1
-    elif elem%5==0:
-        result*=5
-    elif elem%3==0:
-        result*=3
+
     elif elem%2==0:
         result*=2
+    
+    elif elem%5==0:
+        result*=5
+
+    elif elem%3==0:
+        result*=3
+        
     else:
         result*=elem 
 
